@@ -1,10 +1,7 @@
 # Amoghopāya : Option Trading Platform
 
-**A strategy-first options trading platform.** Built for the Risk Management challenge task, MSc Financial Technology, University of Birmingham.
+**A strategy-first options trading platform** 
 
-![tests](https://github.com/USERNAME/amoghopaya/actions/workflows/tests.yml/badge.svg)
-![python](https://img.shields.io/badge/python-3.10%2B-blue)
-![license](https://img.shields.io/badge/license-MIT-green)
 
 Amoghopāya covers the full options trade lifecycle across twenty defined-risk strategies: strategy discovery, suitability gating, trade construction, risk review, position management, and a strategy-level volatility-and-Greeks analysis lab. It pairs a React prototype (the user-facing app) with a tested Python quantitative engine.
 
