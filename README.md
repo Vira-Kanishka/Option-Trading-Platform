@@ -1,4 +1,4 @@
-# Amoghopāya
+# Amoghopāya : Option Trading Platform
 
 **A strategy-first options trading platform.** Built for the Risk Management challenge task, MSc Financial Technology, University of Birmingham.
 
