@@ -95,13 +95,9 @@ value = spread.mark_value(S=450, r=0.05, q=0.013, sigma=0.22)  # sigma is the fa
 
 This is a teaching prototype, and several choices are deliberate simplifications:
 
-- **European or American exercise.** The platform supports both styles, selected up front and threaded through pricing, Greeks, P&L, and stress tests. European options use closed-form BSM; American options use a CRR binomial tree. American Greeks are extracted from the lattice (Delta, Gamma) and small bumps (Vega, Theta, Rho), following the lattice-extraction idea of in 't Hout (arXiv:2401.13361). For the short-dated, near-the-money defined-risk catalogue the two styles are nearly identical; they diverge for cases like deep-ITM long-dated puts, where the early-exercise premium is material.
+- **European or American exercise.** The platform supports both styles, selected upfront and threaded through pricing, Greeks, P&L, and stress tests. European options use closed-form BSM; American options use a CRR binomial tree. American Greeks are extracted from the lattice (Delta, Gamma) and small bumps (Vega, Theta, Rho), following the lattice-extraction idea of in 't Hout (arXiv:2401.13361). For the short-dated, near-the-money defined-risk catalogue the two styles are nearly identical; they diverge for cases like deep-ITM long-dated puts, where the early-exercise premium is material.
 - **Hand-picked policy parameters.** The suitability scoring brackets, risk-flag thresholds, and stress-shock magnitudes are design choices, not data-calibrated constants. The recommender ranks by expected utility but it rests on two explicit, documented belief assumptions (the view-to-distribution drift/spread magnitudes and the CRRA utility form with CFL-derived risk aversion). The pricing/Greeks/margin/parity layer underneath is derived or regulation-specified. Production use would require calibration and regulatory review.
 - **Flat or per-leg vol, not a full surface model.** The engine supports per-leg implied vol but does not implement a stochastic or local volatility model (Heston, Dupire, SABR). For listed-strike pricing, per-leg IV from a vendor surface would be an improvement.
-
-## Author
-
-Kanishk Devgan 
 
 ## License
 
